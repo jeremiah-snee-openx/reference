@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cheatsheets.zip/sitemap.xml
+Sitemap: https://jeremiah-snee-openx.github.io/reference/sitemap.xml
