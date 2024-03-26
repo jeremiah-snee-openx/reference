@@ -58,8 +58,11 @@ hexo.extend.generator.register("list", function (locals) {
       .findOne({ name: category })
       .posts.sort("-date")
       .map(function (post) {
-        let url = this.url_for(post.path);
-        content += `- [${post.title}](${url}): ${post.intro.trim()}\n`;
+        content += `- [${
+          post.title
+        }](http://jeremiah-snee-openx.github.io/repository/${
+          post.path
+        }): ${post.intro.trim()}\n`;
       });
     content += `\n</details>\n\n`;
   });
