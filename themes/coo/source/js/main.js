@@ -2,7 +2,7 @@ let Utils = (function () {
   return {
     LIBRARY: {
       fuse: {
-        lib: ["/js/fuse_6.4.6.js"],
+        lib: [`${window.rel_url}/js/fuse_6.4.6.js`],
         instance: "Fuse",
         attr: { async: true },
       },
@@ -129,7 +129,7 @@ window.addEventListener("load", () => {
     let defaultOptions = {
       trigger: "#mysearch-trigger",
       container: "#mysearch",
-      dbPath: `${location.protocol}//${location.host}/search.json?v=1.0`,
+      dbPath: `${window.rel_url}/search.json?v=1.0`,
     };
     this.container =
       typeof settings.container != "undefined"
