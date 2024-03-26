@@ -7,7 +7,7 @@
     name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1"
   />
-  <meta name="app:pageurl" content="/" />
+  <meta name="app:pageurl" content="<%- url_for(config.url) %>" />
 
   <!-- title -->
   <title><%- page_title() %></title>
@@ -48,7 +48,7 @@
   <link rel="prerender" href="<%- url_for(config.url) %>" />
   <link
     rel="alternate"
-    href="/atom.xml"
+    href="atom.xml"
     title="<%- config.title %>"
     type="application/atom+xml"
   />
@@ -64,5 +64,6 @@
       let html = document.documentElement.classList;
       html.toggle("dark");
     }
+    window.rel_url = "<%-  url_for(config.url)  %>";
   </script>
 </head>

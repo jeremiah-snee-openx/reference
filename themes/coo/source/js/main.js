@@ -2,7 +2,7 @@ let Utils = (function () {
   return {
     LIBRARY: {
       fuse: {
-        lib: ["/reference/js/fuse_6.4.6.js"],
+        lib: ["/js/fuse_6.4.6.js"],
         instance: "Fuse",
         attr: { async: true },
       },
