@@ -15,7 +15,7 @@ timezone: ""
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 # Pattern http://username/repository
 # url: http://localhost:4000/reference
-url: http://jeremiah-snee-openx.github.io/reference
+url: https://jeremiah-snee-openx.github.io/reference
 root: /reference/
 permalink: :name.html
 permalink_defaults:
